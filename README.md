@@ -41,7 +41,7 @@ Expected 90829146b3603e2e7daf5031b2103e9e, got 67e129628458ce06fbc5bb76a58c5ca4
 ```
 Because, as we have seen earlier, `MD5()` func result compares with `90829146b3603e2e7daf5031b2103e9e`.
 
-To understand, how can we hack it, let's dive into this function:
+To understand, how we can hack it, let's dive into this function:
 ```
 func MD5(data []byte) string {
 	b := digest(data)

@@ -114,7 +114,7 @@ Second — is that every byte is rewritten, so nothing remains of md5 and we don
 
 Final hash - is simply some 4 numbers (`F`).
 
-Now we can try to reverse this function deeper to find characters from `F`, but let's notice, that we can simply bruteforce `F` for every such group of 4 characters!
+Now we can try to reverse this function deeper to find characters from `F`, but let's notice, that we can simply bruteforce every such group of 4 characters!
 
 Byte is 256 possible values, so 4 bytes is 256⁴ = 4294967296, which is not too much.
 ***

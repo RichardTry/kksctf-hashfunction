@@ -117,7 +117,7 @@ Final hash - is simply some 4 numbers (`F`).
 Now we can try to reverse this function deeper to find characters from `F`, but let's notice, that we can simply bruteforce `F` for every such group of 4 characters!
 
 Byte is 256 possible values, so 4 bytes is 256⁴ = 4294967296, which is not too much.
-
+***
 But we need to gets this F's to compare with. Here is our admin's password hash: `90829146b3603e2e7daf5031b2103e9e`.
 
 Firstly, split it into 4 bytes groups: `90829146 b3603e2e 7daf5031 b2103e9e`.
@@ -209,7 +209,7 @@ After about 20 seconds we get this:
 Turn it to right order: `41 82 41 99 107 52 114 94 75 62 65 119 71 74 75 45`
 
 And then to ASCII: `)R)ck4r^K>AwGJK-`
-
+***
 Input it as password: `http://tasks.kksctf.ru:30020/login?username=admin&password=)R)ck4r^K%3EAwGJK-` and server returns...
 ```
 Login successful! Flag is kks{1f_s0meth1ng_called_md5_1t_d0esnt_have_t0_be}
